@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Elements Demo</title>
+    <style>
+        table, th, td { border: 1px solid #ccc; border-collapse: collapse; padding: 8px; }
+        fieldset { margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML5 Elements Demonstration</h1>
+    </header>
+
+    <main>
+        <!-- Ordered List with Roman Numerals -->
+        <section>
+            <h2>Top 3 Programming Languages (Ordered List)</h2>
+            <ol type="I">
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Java</li>
+            </ol>
+        </section>
+
+        <!-- External Image from Pexels -->
+        <section>
+            <h2>Nature Image (From Pexels)</h2>
+            <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg" 
+                 alt="Beautiful landscape with a river and trees" 
+                 width="500">
+            <p><small>Source: <a href="https://www.pexels.com" target="_blank">Pexels.com</a></small></p>
+        </section>
+
+        <!-- Contacts Table -->
+        <section>
+            <h2>Contact List (Table)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>123 Main St, City</td>
+                        <td>555-1234</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>456 Oak Ave, Town</td>
+                        <td>555-5678</td>
+                        <td>jane@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Bob Johnson</td>
+                        <td>789 Pine Rd, Village</td>
+                        <td>555-9012</td>
+                        <td>bob@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Alice Brown</td>
+                        <td>321 Elm Blvd, County</td>
+                        <td>555-3456</td>
+                        <td>alice@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Charlie Davis</td>
+                        <td>654 Maple Ln, District</td>
+                        <td>555-7890</td>
+                        <td>charlie@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Registration Form -->
+        <section>
+            <h2>Registration Form</h2>
+            <form id="registration-form">
+                <fieldset>
+                    <legend>Basic Information</legend>
+                    
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    
+                    <br><br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                    
+                    <br><br>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" 
+                           placeholder="At least 8 characters" minlength="8" required>
+                    
+                    <br><br>
+                    
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    
+                    <label for="country">Country:</label>
+                    <select id="country" name="country" required>
+                        <option value="" disabled selected>Select your country</option>
+                        <option value="us">United States</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="ca">Canada</option>
+                        <option value="au">Australia</option>
+                        <option value="other">Other</option>
+                    </select>
+                    
+                    <br><br>
+                    
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                    
+                    <br><br>
+                    
+                    <label>Interests:</label>
+                    <input type="checkbox" id="tech" name="interests" value="technology">
+                    <label for="tech">Technology</label>
+                    
+                    <input type="checkbox" id="sports" name="interests" value="sports">
+                    <label for="sports">Sports</label>
+                    
+                    <input type="checkbox" id="music" name="interests" value="music">
+                    <label for="music">Music</label>
+                </fieldset>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <!-- Multimedia Section -->
+        <section>
+            <h2>Multimedia Elements</h2>
+            
+            <h3>Audio Example</h3>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            
+            <h3>Video Example</h3>
+            <video width="400" controls>
+                <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 HTML5 Demo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
